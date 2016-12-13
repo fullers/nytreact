@@ -1,0 +1,42 @@
+{
+  "name": "nytreact",
+  "version": "1.0.0",
+  "description": "NY Times Search using React.js, Node.js, Express, and MongoDB",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullers/nytreact.git"
+  },
+  "keywords": [
+    "React.js",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "Shaun L. Fuller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullers/nytreact/issues"
+  },
+  "homepage": "https://github.com/fullers/nytreact#readme",
+  "dependencies": {
+    "axios": "^0.12.0",
+    "mongoose": "^4.7.2",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "request": "^2.72.0",
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.13",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "json-loader": "^0.5.4",
+    "webpack": "^1.13.1"
+  }
+}
