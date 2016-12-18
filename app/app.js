@@ -1,9 +1,15 @@
-// Include the Main React Dependencies
-import React from "react";
-import ReactDOM from "react-dom";
+//sets up the routes for the rest of the app, utilizes react-router to do this
 
-// Include the Main Component
-import Main from "./components/Main";
+var React = require('react');
+var ReactDOM = require('react-dom');
 
-// This code here allows us to render our main component (in this case "Main")
-ReactDOM.render(<Main />, document.getElementById("app"));
+//properties associated with routes
+var Router = require('react-router').Router;
+
+var routes = require('./config/routes');
+
+ReactDOM.render(
+
+	<Router routes={routes} />,
+	document.getElementById('app')
+)

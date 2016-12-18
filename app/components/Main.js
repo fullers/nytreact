@@ -1,17 +1,26 @@
-import React from "react";
+//this is the main app component.. sets up the header and static content
 
-// Import sub-components
-import Searched from "./children/Searched";
-import Saved from "./children/Saved";
+//include react & react-router
+var React = require('react');
+var Search = require('./Search.js');
+// var Router = require('react-router');
 
-// Helper Function
-import helpers from "./utils/helpers";
+//create the main component - createClass is a function within React so you need React before createClass
+var Main = React.createClass({
+	//every component has to have a render function
+	render: function(){
+		return (
+			<div className="main-container">
+				<div className="jumbotron">
+					<h1 className="text-center"> New York Times Article Scrubber </h1>
+					<p className="lead text-center"> Search for and annotate articles of interest!s. </p> 
+				</div>
+				<div className="container">
+					{this.props.children}
+				</div>
+			</div>
+		)
+	}
+});
 
-class Main extends React.Component { 
-
-	
-
-}
-
-// Export the componen back for use in other files
-export default Main;
+module.exports = Main;
