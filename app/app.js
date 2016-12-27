@@ -8,8 +8,5 @@ var Router = require('react-router').Router;
 
 var routes = require('./config/routes');
 
-ReactDOM.render(
-
-	<Router routes={routes} />,
-	document.getElementById('app')
-)
+// Renders the contents according to the route page.
+ReactDOM.render(routes, document.getElementById("app"));

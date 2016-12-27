@@ -29,24 +29,24 @@ var Query = React.createClass({
 				<div className="panel panel-primary">
 			  		<div className="panel-heading">
 			    		<h1 className="lead">
-			    			<span class="glyphicon glyphicon-search"></span>  Search Query
+			    			<span className="glyphicon glyphicon-search"></span>  Search Query
 			    		</h1>
 			  		</div>
 			  		<div className="panel-body">
 						<form>
 							<div className="form-group">
-								<label for="term">  <h4 className="">Keyword: </h4></label>
+								<label htmlFor="term">  <h4 className="">Keyword: </h4></label>
 								<input type="text" value={this.state.value} className="form-control" id="term" onChange={this.handleChange} required />
 							</div>
 							<div className="form-group">
-								<label for="start"> <h4> Start Year: </h4></label>
+								<label htmlFor="start"> <h4> Start Year: </h4></label>
 								<input type="number" value={this.state.value} className="form-control" id="start" onChange={this.handleChange} required />
 							</div>
 							<div className="form-group">
-								<label for="end"><h4 className=""> End Year: </h4> </label>
+								<label htmlFor="end"><h4 className=""> End Year: </h4> </label>
 								<input type="text" value={this.state.value} className="form-control" id="end" onChange={this.handleChange} required />
 							</div>
-							<button type="button" className="btn btn-default" onClick={this.handleSubmit}> <h4> <span class="glyphicon glyphicon-search"></span>  Search </h4>
+							<button type="button" className="btn btn-default" onClick={this.handleSubmit}> <h4> <span className="glyphicon glyphicon-search"></span>  Search </h4>
 							</button>
 						</form>
 				  	</div>

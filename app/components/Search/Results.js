@@ -30,7 +30,7 @@ var Results = React.createClass({
 					<div className="row">
 						<div className="panel panel-primary">
 							<div className="panel-heading">
-								<h1 className="panel-title"> <strong> <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Results </strong>
+								<h1 className="panel-title"> <strong> <span className="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Results </strong>
 								</h1>
 							</div>
 							<div className="panel-body">
